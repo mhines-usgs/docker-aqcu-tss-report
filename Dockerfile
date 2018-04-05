@@ -20,7 +20,7 @@ RUN ["chmod", "+x", "entrypoint.sh"]
 
 #Default ENV Values
 ENV requireSsl=true
-ENV serverPort=443
+ENV serverPort=7501
 ENV serverContextPath=/
 ENV springFrameworkLogLevel=info
 ENV javaToRServerList=http://localhost:8444

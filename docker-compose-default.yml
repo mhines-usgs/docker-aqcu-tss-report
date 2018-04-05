@@ -14,7 +14,7 @@
       build: .
       image: aqcu-tss-report-service
       ports:
-        - "8443:8443"
+        - "7501:7501"
       secrets:
         - source: tomcat_ssl_crt
           target: /tomcat-wildcard-ssl.crt
