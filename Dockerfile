@@ -14,7 +14,7 @@ RUN ["chmod", "+x", "launch-app.sh"]
 ENV serverPort=7501
 ENV javaToRServerList=https://reporting-services.nwis.usgs.gov:7500
 ENV aqcuReportsWebserviceUrl=https://reporting.nwis.usgs.gov/aqcu/timeseries-ws/
-ENV aquariusServiceEndpoint=http://tsqa.nwis.usgs.gov
+ENV aquariusServiceEndpoint=http://ts.nwis.usgs.gov
 ENV aquariusServiceUser=apinwisra
 ENV AQUARIUS_SERVICE_PASSWORD_PATH=/aquariusPassword.txt
 ENV HEALTHY_RESPONSE_CONTAINS='{"status":{"code":"UP","description":""}'
