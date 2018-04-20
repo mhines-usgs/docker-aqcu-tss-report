@@ -23,4 +23,4 @@
         - source: aquarius_service_password
           target: /aquariusPassword.txt
       env_file:
-        - docker-compose-default.env
+        - docker-compose.env
