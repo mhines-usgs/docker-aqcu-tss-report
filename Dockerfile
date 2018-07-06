@@ -20,5 +20,7 @@ ENV aquariusServiceUser=apinwisra
 ENV hystrixThreadTimeout=300000
 ENV hystrixMaxQueueSize=200
 ENV hystrixThreadPoolSize=10
+ENV oauthResourceId=resource-id
+ENV oauthResourceTokenKeyUri=http://localhost/oauth/token_key
 ENV AQUARIUS_SERVICE_PASSWORD_PATH=/aquariusPassword.txt
 ENV HEALTHY_RESPONSE_CONTAINS='{"status":{"code":"UP","description":""}'
