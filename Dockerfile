@@ -1,4 +1,4 @@
-FROM cidasdpdasartip.cr.usgs.gov:8447/aqcu/aqcu-base:latest
+FROM cidasdpdasartip.cr.usgs.gov:8447/wma/wma-spring-boot-base:latest
 
 # Pull Artifact
 ENV repo_name=aqcu-maven-centralized
@@ -21,6 +21,6 @@ ENV hystrixThreadTimeout=300000
 ENV hystrixMaxQueueSize=200
 ENV hystrixThreadPoolSize=10
 ENV oauthResourceId=resource-id
-ENV oauthResourceTokenKeyUri=http://localhost/oauth/token_key
+ENV oauthResourceTokenKeyUri=https://example.gov/oauth/token_key
 ENV AQUARIUS_SERVICE_PASSWORD_PATH=/aquariusPassword.txt
 ENV HEALTHY_RESPONSE_CONTAINS='{"status":{"code":"UP","description":""}'
