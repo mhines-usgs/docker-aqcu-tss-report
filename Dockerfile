@@ -3,7 +3,7 @@ FROM cidasdpdasartip.cr.usgs.gov:8447/wma/wma-spring-boot-base:0.0.1
 # Pull Artifact
 ENV repo_name=aqcu-maven-centralized
 ENV artifact_id=aqcu-tss-report
-ENV artifact_version=0.0.3
+ENV artifact_version=0.0.4-SNAPSHOT
 RUN ./pull-from-artifactory.sh ${repo_name} gov.usgs.aqcu ${artifact_id} ${artifact_version} app.jar
 
 #Add Launch Script
