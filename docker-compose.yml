@@ -6,21 +6,18 @@
       file: ./certificates/tomcat/tomcat-wildcard-dev.crt
     tomcat_ssl_key:
       file: ./certificates/tomcat/tomcat-wildcard-dev.key
-    aquarius_service_password:
-      file: ./secrets/aquariusPassword.txt
 
   services:
-    aqcu-tss-report:
+    aqcu-tss-report-service:
       build: .
       image: aqcu-tss-report-service
       ports:
         - "7501:7501"
       secrets:
         - source: tomcat_ssl_crt
-          target: /tomcat-wildcard-ssl.crt
+          target: /home/spring/tomcat-wildcard-ssl.crt
         - source: tomcat_ssl_key
-          target: /tomcat-wildcard-ssl.key
-        - source: aquarius_service_password
-          target: /aquariusPassword.txt
+          target: /home/spring/tomcat-wildcard-ssl.key
       env_file:
-        - docker-compose.env
+        - config.env
+        - secrets.env
