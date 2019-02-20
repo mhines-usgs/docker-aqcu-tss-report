@@ -1,6 +1,6 @@
 FROM usgswma/wma-spring-boot-base:8-jre-slim
 
-ENV artifact_version=0.0.5-SNAPSHOT
+ENV artifact_version=0.0.5
 ENV serverPort=7501
 ENV javaToRServiceEndpoint=https://reporting-services.nwis.usgs.gov:7500/aqcu-java-to-r/
 ENV aqcuReportsWebserviceUrl=https://reporting.nwis.usgs.gov/aqcu/timeseries-ws/
