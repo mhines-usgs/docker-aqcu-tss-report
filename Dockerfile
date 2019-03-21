@@ -1,4 +1,4 @@
-FROM cidasdpdasartip.cr.usgs.gov:8447/aqcu/aqcu-base:latest
+FROM usgswma/wma-spring-boot-base:8-jre-slim-0.0.4
 
 # Pull Artifact
 ENV repo_name=aqcu-maven-centralized
